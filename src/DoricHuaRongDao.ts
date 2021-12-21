@@ -18,8 +18,8 @@ import {
   text,
   View,
   vlayout,
+  layoutConfig,
 } from "doric";
-import { layoutConfig } from "doric/lib/src/util/layoutconfig";
 
 import pic0 from "./images/pic0.png";
 import pic3 from "./images/pic3.png";
@@ -317,7 +317,7 @@ class DoricHuaRongDao extends Panel {
         const view = vh.roleViews[step.index];
         setTimeout(() => {
           this.btnEnabled = true;
-        }, 110);
+        }, 100);
         switch (step.direction) {
           case 1:
             {

@@ -4,8 +4,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { animate, Color, FlexDirection, flexlayout, gestureContainer, Gravity, image, Justify, log, modal, Panel, ScaleType, stack, storage, text, vlayout, } from "doric";
-import { layoutConfig } from "doric/lib/src/util/layoutconfig";
+import { animate, Color, FlexDirection, flexlayout, gestureContainer, Gravity, image, Justify, log, modal, Panel, ScaleType, stack, storage, text, vlayout, layoutConfig, } from "doric";
 import pic0 from "./images/pic0.png";
 import pic3 from "./images/pic3.png";
 import pic6 from "./images/pic6.png";
@@ -265,7 +264,7 @@ let DoricHuaRongDao = class DoricHuaRongDao extends Panel {
                 const view = vh.roleViews[step.index];
                 setTimeout(() => {
                     this.btnEnabled = true;
-                }, 110);
+                }, 100);
                 switch (step.direction) {
                     case 1:
                         {

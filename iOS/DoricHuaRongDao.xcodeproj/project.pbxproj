@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		734345C86448AFF7D46DB74B /* libPods-DoricHuaRongDao.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F78B9F8DB6B564823C7AA4 /* libPods-DoricHuaRongDao.a */; };
 		E2B059BF23C452BB007555C7 /* src in Resources */ = {isa = PBXBuildFile; fileRef = E2B059BE23C452BB007555C7 /* src */; };
-		E2EF0C17275F787F007801C5 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = E2EF0C16275F787F007801C5 /* assets */; };
 		E2F64CEF2399359C0006BD9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F64CEE2399359C0006BD9A /* AppDelegate.m */; };
 		E2F64CF22399359C0006BD9A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F64CF12399359C0006BD9A /* SceneDelegate.m */; };
 		E2F64CFA2399359E0006BD9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F64CF92399359E0006BD9A /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		8412AD8BBD22BB21F1B0BDA0 /* Pods-DoricHuaRongDao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoricHuaRongDao.debug.xcconfig"; path = "Target Support Files/Pods-DoricHuaRongDao/Pods-DoricHuaRongDao.debug.xcconfig"; sourceTree = "<group>"; };
 		E22C51B780896E5611A386D0 /* Pods-DoricHuaRongDao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoricHuaRongDao.release.xcconfig"; path = "Target Support Files/Pods-DoricHuaRongDao/Pods-DoricHuaRongDao.release.xcconfig"; sourceTree = "<group>"; };
 		E2B059BE23C452BB007555C7 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../bundle/src; sourceTree = "<group>"; };
-		E2EF0C16275F787F007801C5 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../assets; sourceTree = "<group>"; };
 		E2F64CEA2399359C0006BD9A /* DoricHuaRongDao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoricHuaRongDao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F64CED2399359C0006BD9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2F64CEE2399359C0006BD9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 		E2F64CE12399359C0006BD9A = {
 			isa = PBXGroup;
 			children = (
-				E2EF0C16275F787F007801C5 /* assets */,
 				E2B059BE23C452BB007555C7 /* src */,
 				E2F64CEC2399359C0006BD9A /* App */,
 				E2F64CEB2399359C0006BD9A /* Products */,
@@ -162,7 +159,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2EF0C17275F787F007801C5 /* assets in Resources */,
 				E2B059BF23C452BB007555C7 /* src in Resources */,
 				E2F64CFD2399359E0006BD9A /* LaunchScreen.storyboard in Resources */,
 				E2F64CFA2399359E0006BD9A /* Assets.xcassets in Resources */,
