@@ -1,7 +1,6 @@
 # Doric三国·华容道
 使用Doirc实现的一个三国·华容道小游戏（Use Doric to achieve a small game HuaRongDao.）
 
-
 <img src="../main/images/01.png" width="50%">
 
 ### Doric
