@@ -22,13 +22,13 @@ import {
 } from "doric";
 import { layoutConfig } from "doric/lib/src/util/layoutconfig";
 
-import pic0 from "./images/pic0.png"
-import pic3 from "./images/pic3.png"
-import pic6 from "./images/pic6.png"
-import pic10 from "./images/pic10.png"
-import pic11 from "./images/pic11.png"
-import pic13 from "./images/pic13.png"
-import pic14 from "./images/pic14.png"
+import pic0 from "./images/pic0.png";
+import pic3 from "./images/pic3.png";
+import pic6 from "./images/pic6.png";
+import pic10 from "./images/pic10.png";
+import pic11 from "./images/pic11.png";
+import pic13 from "./images/pic13.png";
+import pic14 from "./images/pic14.png";
 
 interface RoleModel {
   name: string;
@@ -416,81 +416,95 @@ class DoricHuaRongDao extends Panel {
   reset(it: DataModel) {
     it.steps = [];
     it.rolePositions = [
-        {
-          name: "张飞",
-          type: 12,
-          origin: { x: 0, y: 0 },
-          photoPath: "pic11",
-        },
-        {
-          name: "曹操",
-          type: 22,
-          origin: { x: 1, y: 0 },
-          photoPath: "pic0",
-        },
-        {
-          name: "赵云",
-          type: 12,
-          origin: { x: 3, y: 0 },
-          photoPath: "pic10",
-        },
-        {
-          name: "黄忠",
-          type: 12,
-          origin: { x: 0, y: 2 },
-          photoPath: "pic14",
-        },
-        {
-          name: "关羽",
-          type: 21,
-          origin: { x: 1, y: 2 },
-          photoPath: "pic3",
-        },
-        {
-          name: "马超",
-          type: 12,
-          origin: { x: 3, y: 2 },
-          photoPath: "pic13",
-        },
-        {
-          name: "卒1",
-          type: 11,
-          origin: { x: 1, y: 3 },
-          photoPath: "pic6",
-        },
-        {
-          name: "卒2",
-          type: 11,
-          origin: { x: 2, y: 3 },
-          photoPath: "pic6",
-        },
-        {
-          name: "卒3",
-          type: 11,
-          origin: { x: 0, y: 4 },
-          photoPath: "pic6",
-        },
-        {
-          name: "卒4",
-          type: 11,
-          origin: { x: 3, y: 4 },
-          photoPath: "pic6",
-        },
-      ];
+      {
+        name: "张飞",
+        type: 12,
+        origin: { x: 0, y: 0 },
+        photoPath: "pic11",
+      },
+      {
+        name: "曹操",
+        type: 22,
+        origin: { x: 1, y: 0 },
+        photoPath: "pic0",
+      },
+      {
+        name: "赵云",
+        type: 12,
+        origin: { x: 3, y: 0 },
+        photoPath: "pic10",
+      },
+      {
+        name: "黄忠",
+        type: 12,
+        origin: { x: 0, y: 2 },
+        photoPath: "pic14",
+      },
+      {
+        name: "关羽",
+        type: 21,
+        origin: { x: 1, y: 2 },
+        photoPath: "pic3",
+      },
+      {
+        name: "马超",
+        type: 12,
+        origin: { x: 3, y: 2 },
+        photoPath: "pic13",
+      },
+      {
+        name: "卒1",
+        type: 11,
+        origin: { x: 1, y: 3 },
+        photoPath: "pic6",
+      },
+      {
+        name: "卒2",
+        type: 11,
+        origin: { x: 2, y: 3 },
+        photoPath: "pic6",
+      },
+      {
+        name: "卒3",
+        type: 11,
+        origin: { x: 0, y: 4 },
+        photoPath: "pic6",
+      },
+      {
+        name: "卒4",
+        type: 11,
+        origin: { x: 3, y: 4 },
+        photoPath: "pic6",
+      },
+    ];
   }
 
   imageBase64String(path: string): string {
-    var base64Str = pic0
-    switch(path) {
-        case 'pic0': base64Str = pic0;  break;
-        case 'pic3': base64Str = pic3;  break;
-        case 'pic6': base64Str = pic6;  break;
-        case 'pic10': base64Str = pic10;  break;
-        case 'pic11': base64Str = pic11;  break;
-        case 'pic13': base64Str = pic13;  break;
-        case 'pic14': base64Str = pic14;  break;
+    var base64Str = pic0;
+    switch (path) {
+      case "pic0":
+        base64Str = pic0;
+        break;
+      case "pic3":
+        base64Str = pic3;
+        break;
+      case "pic6":
+        base64Str = pic6;
+        break;
+      case "pic10":
+        base64Str = pic10;
+        break;
+      case "pic11":
+        base64Str = pic11;
+        break;
+      case "pic13":
+        base64Str = pic13;
+        break;
+      case "pic14":
+        base64Str = pic14;
+        break;
     }
-    return base64Str
+    return base64Str;
   }
 
   build(rootView: Group): void {

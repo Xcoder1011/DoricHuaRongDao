@@ -543,25 +543,25 @@ let DoricHuaRongDao = class DoricHuaRongDao extends doric.Panel {
     imageBase64String(path) {
         var base64Str = img$6;
         switch (path) {
-            case 'pic0':
+            case "pic0":
                 base64Str = img$6;
                 break;
-            case 'pic3':
+            case "pic3":
                 base64Str = img$5;
                 break;
-            case 'pic6':
+            case "pic6":
                 base64Str = img$4;
                 break;
-            case 'pic10':
+            case "pic10":
                 base64Str = img$3;
                 break;
-            case 'pic11':
+            case "pic11":
                 base64Str = img$2;
                 break;
-            case 'pic13':
+            case "pic13":
                 base64Str = img$1;
                 break;
-            case 'pic14':
+            case "pic14":
                 base64Str = img;
                 break;
         }
