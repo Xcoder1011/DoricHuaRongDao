@@ -103,7 +103,7 @@ let DoricHuaRongDao = class DoricHuaRongDao extends Panel {
                 return false;
             }
         }
-        const duration = 150;
+        const duration = 100;
         switch (direction) {
             case 1:
                 {
@@ -484,19 +484,19 @@ let DoricHuaRongDao = class DoricHuaRongDao extends Panel {
                         onPan: (dx, dy) => {
                             if (!this.responsedGesture) {
                                 //direction: 1 left, 2 right, 3 top, 4 bottom
-                                if (dx > 2 && Math.abs(dy) <= 1) {
+                                if (dx > 1 && Math.abs(dy) <= 5) {
                                     this.responsedGesture = true;
                                     this.checkRoleCanMoveToDirection(index, 1, view);
                                 }
-                                else if (dx < -2 && Math.abs(dy) <= 1) {
+                                else if (dx < -1 && Math.abs(dy) <= 5) {
                                     this.responsedGesture = true;
                                     this.checkRoleCanMoveToDirection(index, 2, view);
                                 }
-                                else if (dy > 2 && Math.abs(dx) <= 1) {
+                                else if (dy > 1 && Math.abs(dx) <= 5) {
                                     this.responsedGesture = true;
                                     this.checkRoleCanMoveToDirection(index, 3, view);
                                 }
-                                else if (dy < -2 && Math.abs(dx) <= 1) {
+                                else if (dy < -1 && Math.abs(dx) <= 5) {
                                     this.responsedGesture = true;
                                     this.checkRoleCanMoveToDirection(index, 4, view);
                                 }
@@ -634,7 +634,6 @@ let DoricHuaRongDao = class DoricHuaRongDao extends Panel {
             .getItem(kGameProgressKey)
             .then((cache) => {
             if (cache) {
-                log(`onCreate 读取缓存: ${cache}`);
                 const s = JSON.parse(cache);
                 this.dataModel = s;
                 this.resetSubViewsFrame(s);
