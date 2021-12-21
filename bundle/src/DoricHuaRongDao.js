@@ -374,12 +374,12 @@ let DoricHuaRongDao = class DoricHuaRongDao extends doric.Panel {
                     return;
                 this.btnEnabled = false;
                 const step = steps[steps.length - 1];
-                const duration = 150;
+                const duration = 100;
                 const item = it.rolePositions[step.index];
                 const view = vh.roleViews[step.index];
                 setTimeout(() => {
                     this.btnEnabled = true;
-                }, 200);
+                }, 110);
                 switch (step.direction) {
                     case 1:
                         {
